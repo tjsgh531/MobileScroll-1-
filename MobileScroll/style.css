@@ -1,0 +1,17 @@
+@media(max-width:540px){
+    *{
+
+    }
+    .sentence{
+        position: relative;
+    }
+    .sentence p{
+        position: absolute;
+
+        font-size:24px;
+        font-weight: 400;
+        font-family: 'Nanum Pen Script', cursive;
+        text-align: center;
+
+    }
+}

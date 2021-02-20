@@ -1,0 +1,33 @@
+[Desktop Entry]
+Version=1.0
+Name=Hamoni Web Browser
+Name[ko]=하모니 웹 브라우저
+GenericName=Web Browser
+GenericName[ko]=웹 브라우저
+Comment=Access the Internet
+Comment[ko]=인터넷에 연결합니다
+Exec=chromium-browser --password-store=basic %U
+Terminal=false
+X-MultipleArgs=false
+Type=Application
+Icon=chromium-browser
+Categories=Network;WebBrowser;
+MimeType=text/html;text/xml;application/xhtml_xml;x-scheme-handler/http;x-scheme-handler/https;
+StartupNotify=true
+Actions=NewWindow;Incognito;TempProfile;
+X-AppInstall-Package=hamoni-browser
+
+[Desktop Action NewWindow]
+Name=Open a New Window
+Name[ko]=새창 열기
+Exec=chromium-browser --password-store=basic
+
+[Desktop Action Incognito]
+Name=Open a New Window in incognito mode
+Name[ko]=시크릿 모드로 새창 열기
+Exec=chromium-browser --password-store=basic --incognito
+
+[Desktop Action TempProfile]
+Name=Open a New Window with a temporary profile
+Name[ko]=임시 프로파일로 새창 열기
+Exec=chromium-browser --password-store=basic --temp-profile
