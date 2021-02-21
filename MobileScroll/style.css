@@ -1,9 +1,21 @@
 @media(max-width:540px){
-    *{
-
+*{
+    margin: 0;
+}
+    html{
+       height: 100%;
+    }
+    #background{
+        height: 100%;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: -1;
     }
     .sentence{
         position: relative;
+        border: solid white 1.5px;
+        margin: 10px;
     }
     .sentence p{
         position: absolute;
@@ -13,5 +25,6 @@
         font-family: 'Nanum Pen Script', cursive;
         text-align: center;
 
+        transition: all 2s ease-in-out;
     }
 }

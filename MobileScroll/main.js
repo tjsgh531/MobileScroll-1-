@@ -16,16 +16,16 @@ class Main{
         this.resize();
         
         if(this.isSupported){
-            $(window).on('touchstart',()=>{
-                console.log(swipeEvent.swipe(window));
-            });
+           
+            swipeEvent.swipe(window);
+           
         }
     }
 
     resize(){
         this.stageWidth = window.innerWidth;
         this.stageHeight = window.innerHeight;
-        $(".sentence").css("width",this.stageWidth).css("height",this.stageHeight);
+        $(".sentence").css("width",this.stageWidth -30).css("height",this.stageHeight -30);
         $(".sentence p").css("top","50%").css("left","50%").css("transform","translate(-50%,-80%)");
     }
 
