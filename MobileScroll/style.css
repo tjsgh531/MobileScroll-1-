@@ -7,9 +7,10 @@
     }
     #background{
         height: 100%;
-        width: 100%;
+        width: 130%;
         position: fixed;
         top: 0;
+        right:0;
         z-index: -1;
     }
     .sentence{
@@ -24,7 +25,5 @@
         font-weight: 400;
         font-family: 'Nanum Pen Script', cursive;
         text-align: center;
-
-        transition: all 2s ease-in-out;
     }
 }

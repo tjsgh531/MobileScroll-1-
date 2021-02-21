@@ -12,13 +12,13 @@ class Main{
     constructor(){
         this.isSupported = !!('ontouchstart' in window || (navigator.pointerEnabled && navigator.maxTouchPoints > 0));
 
-        $("window").resize(this.resize.bind(this));
+        $(window).resize(this.resize.bind(this));
         this.resize();
         
         if(this.isSupported){
-           
+            $(window).resize(this.resize.bind(this));
+            this.resize();
             swipeEvent.swipe(window);
-           
         }
     }
 
